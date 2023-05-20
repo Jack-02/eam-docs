@@ -279,11 +279,15 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../model/" class="md-tabs__link">
-      模型文档
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../model/" class="md-tabs__link">
+        模型文档
+      </a>
+    </li>
+  
 
       
         
@@ -526,10 +530,92 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../model/">模型文档</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          模型文档
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../model/" class="md-nav__link">
-        模型文档
+      <a href="../model/sys_model/" class="md-nav__link">
+        系统架构模型
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/asset_model/" class="md-nav__link">
+        资产架构模型
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/sys_man_model/" class="md-nav__link">
+        系统管理模型
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -860,6 +946,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#38" class="md-nav__link">
+    38. 用户信息显示（拓展功能）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39" class="md-nav__link">
+    39. 用户信息修改（拓展功能）
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1186,6 +1286,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#38" class="md-nav__link">
+    38. 用户信息显示（拓展功能）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39" class="md-nav__link">
+    39. 用户信息修改（拓展功能）
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1210,9 +1324,127 @@
 
 <div class="admonition note eam 企业固定资产管理系统 测试">
 <p class="admonition-title">Note</p>
-<p>本文档将详细阐述 <strong>EAM</strong> 所实现的各个原始需求以及如何进行查看与验证。在本次项目中， 把bug都改对 (CST18SEM12) 小组合作开发的 <strong>EAM 企业固定资产管理系统</strong> 顺利完成了从 IR.001 至 IR.031 的共 31 个基本需求与拓展需求，下面将对每个需求的实现进行详细阐述。</p>
+<p>本文档将详细阐述 <strong>EAM</strong> 所实现的各个原始需求以及如何进行查看与验证。在本次项目中， 把bug都改对 (CST18SEM12) 小组合作开发的 <strong>EAM 企业固定资产管理系统</strong> 顺利完成了从 37 个基本需求与 2 个拓展需求，下面将对每个需求的实现进行详细阐述。</p>
 </div>
 <h2 id="_1">一、原始需求完成情况<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th align="center">原始需求</th>
+<th align="center">交付情况</th>
+<th align="center">原始需求</th>
+<th align="center">交付情况</th>
+<th align="center">原始需求</th>
+<th align="center">交付情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">01.登录登出</td>
+<td align="center">Sprint 1</td>
+<td align="center">14.飞书人事管理</td>
+<td align="center">Sprint 3</td>
+<td align="center">27.资产领用</td>
+<td align="center">Sprint 3</td>
+</tr>
+<tr>
+<td align="center">02.用户管理</td>
+<td align="center">Sprint 2</td>
+<td align="center">15.业务实体定义</td>
+<td align="center">Sprint 1</td>
+<td align="center">28.资产退库</td>
+<td align="center">Sprint 3</td>
+</tr>
+<tr>
+<td align="center">03.角色权限</td>
+<td align="center">Sprint 4</td>
+<td align="center">16.资产分类定义</td>
+<td align="center">Sprint 2</td>
+<td align="center">29.资产维保</td>
+<td align="center">Sprint 3</td>
+</tr>
+<tr>
+<td align="center">04.组织数据管理</td>
+<td align="center">Sprint 2</td>
+<td align="center">17.资产属性定义</td>
+<td align="center">Sprint 2</td>
+<td align="center">30.资产转移</td>
+<td align="center">Sprint 3</td>
+</tr>
+<tr>
+<td align="center">05.员工数据管理</td>
+<td align="center">Sprint 2</td>
+<td align="center">18.资产标签定义</td>
+<td align="center">Sprint 2</td>
+<td align="center">31.资产扫描</td>
+<td align="center">Sprint 3</td>
+</tr>
+<tr>
+<td align="center">06.应用门户</td>
+<td align="center">Sprint 3</td>
+<td align="center">19.资产录入</td>
+<td align="center">Sprint 2</td>
+<td align="center">32.资产统计</td>
+<td align="center">Sprint 4</td>
+</tr>
+<tr>
+<td align="center">07.应用管理</td>
+<td align="center">Sprint 3</td>
+<td align="center">20.资产信息变更</td>
+<td align="center">Sprint 2</td>
+<td align="center">33.资产折旧</td>
+<td align="center">Sprint 4</td>
+</tr>
+<tr>
+<td align="center">08.待办任务</td>
+<td align="center">Sprint 3</td>
+<td align="center">21.资产查询</td>
+<td align="center">Sprint 2</td>
+<td align="center">34.资产告警</td>
+<td align="center">Sprint 4</td>
+</tr>
+<tr>
+<td align="center">09.操作日志</td>
+<td align="center">Sprint 3</td>
+<td align="center">22.资产批量导入</td>
+<td align="center">Sprint 3</td>
+<td align="center">35.安全要求</td>
+<td align="center">Sprint 4</td>
+</tr>
+<tr>
+<td align="center">10.导入导出管理</td>
+<td align="center">Sprint 3</td>
+<td align="center">23.资产清退</td>
+<td align="center">Sprint 3</td>
+<td align="center">36.易用性要求</td>
+<td align="center">Sprint 4</td>
+</tr>
+<tr>
+<td align="center">11.飞书账号绑定</td>
+<td align="center">Sprint 3</td>
+<td align="center">24.资产调拨</td>
+<td align="center">Sprint 3</td>
+<td align="center">37.性能要求</td>
+<td align="center">Sprint 4</td>
+</tr>
+<tr>
+<td align="center">12.飞书消息推送</td>
+<td align="center">Sprint 3</td>
+<td align="center">25.资产历史</td>
+<td align="center">Sprint 3</td>
+<td align="center">38.用户信息显示</td>
+<td align="center">Sprint 2</td>
+</tr>
+<tr>
+<td align="center">13.飞书审批管理</td>
+<td align="center">Sprint 3</td>
+<td align="center">26.资产查看</td>
+<td align="center">Sprint 3</td>
+<td align="center">39.用户信息修改</td>
+<td align="center">Sprint 2</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_2">二、原始需求测试<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="01">01. 登录登出<a class="headerlink" href="#01" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -1448,7 +1680,7 @@
 <p>演示视频链接：</p>
 </li>
 </ul>
-<p>进入系统管理员账号，点击侧栏的“设置”按钮，在“飞书对接管理”一栏中点击“同步组织架构”，即可将飞书中的所有【未在系统中】的用户同步到系统中并自动创建以“飞书用户_{飞书用户名}”为名称的员工账号，初始密码为123456。若将右侧的“自动”按钮打开，则系统会每 5 分钟从飞书向系统同步新增员工。</p>
+<p>进入系统管理员账号，点击侧栏的“设置”按钮，在“飞书对接管理”一栏中点击“同步组织架构”，即可将飞书中的所有【未在系统中】的用户同步到系统中并自动创建以“飞书用户_{飞书用户名+feishu_ID前10位}”为名称的员工账号，初始密码为123456。若将右侧的“自动”按钮打开，则系统会每 5 分钟从飞书向系统同步新增员工。</p>
 <p><img alt="image-20230519120530607" src="../test.assets/image-20230519120530607.png" /></p>
 <p><center>组织架构同步界面展示</center></p>
 <p><img alt="image-20230519120959696" src="../test.assets/image-20230519120959696.png" /></p>
@@ -1547,7 +1779,7 @@
 <p>需求说明：资产管理员 修改单个资产实例的信息和资产实例之间的挂靠关系</p>
 </li>
 <li>
-<p>演示视频链接：</p>
+<p>演示视频链接：<a href="https://cloud.tsinghua.edu.cn/f/2eaa6b772f0844d38a5d/" target="_blank"><a href="https://cloud.tsinghua.edu.cn/f/2eaa6b772f0844d38a5d/">https://cloud.tsinghua.edu.cn/f/2eaa6b772f0844d38a5d/</a></a></p>
 </li>
 </ul>
 <p>进入资产管理员账号，点击侧栏的“资产”按钮，再点击分页栏中的“资产查询”按钮，即可看到部门及子部门下的所有资产。对于每一个资产，点击右侧的“编辑”，即可在弹出的对话框中修改资产信息，包括基本资料、价值、数量、图片、描述等。点击“确认”按钮，即可成功修改。</p>
@@ -1567,7 +1799,7 @@
 </ul>
 </li>
 <li>
-<p>演示视频链接：</p>
+<p>演示视频链接：<a href="https://cloud.tsinghua.edu.cn/f/90baab67a7e649ce88d1/" target="_blank"><a href="https://cloud.tsinghua.edu.cn/f/90baab67a7e649ce88d1/">https://cloud.tsinghua.edu.cn/f/90baab67a7e649ce88d1/</a></a></p>
 </li>
 </ul>
 <p>进入资产管理员账号，点击侧栏的“资产”按钮，再点击分页栏中的“资产查询”按钮，即可看到部门及子部门下的所有资产。</p>
@@ -1626,7 +1858,7 @@
 <p>需求说明：资产管理员 向其他部门的资产管理员批量调拨资产</p>
 </li>
 <li>
-<p>演示视频链接：</p>
+<p>演示视频链接：<a href="https://cloud.tsinghua.edu.cn/f/be69d94f112d43169f51/" target="_blank"><a href="https://cloud.tsinghua.edu.cn/f/be69d94f112d43169f51/">https://cloud.tsinghua.edu.cn/f/be69d94f112d43169f51/</a></a></p>
 </li>
 </ul>
 <p>进入资产管理员账号，点击侧栏的“资产”按钮，再点击分页栏中的“资产查询”按钮，即可看到部门及子部门下的所有资产。可以一次性选中多个资产，再点击右上角的“批量调拨”按钮；在弹出的对话框中选择调拨的目标部门，也可以继续模糊查询其他资产一并调拨。调拨的资产将从当前部门的资产管理员名下挂账到目标部门的资产管理员名下。</p>
@@ -1740,7 +1972,7 @@
 <p>需求说明：所有用户 扫描粘贴在资产设备上的标签读取资产的有关信息</p>
 </li>
 <li>
-<p>演示视频链接：</p>
+<p>演示视频链接：<a href="https://cloud.tsinghua.edu.cn/f/6c460d589e3348c6a33f/" target="_blank"><a href="https://cloud.tsinghua.edu.cn/f/6c460d589e3348c6a33f/">https://cloud.tsinghua.edu.cn/f/6c460d589e3348c6a33f/</a></a></p>
 </li>
 </ul>
 <p>打开微信、飞书、百度等任何具有扫码功能的 APP，扫描粘贴在资产设备上的标签，即可读取资产的有关信息。</p>
@@ -1788,7 +2020,7 @@
 <p>需求说明：资产管理员 对部门内某些资产类型设置告警策略</p>
 </li>
 <li>
-<p>演示视频链接：</p>
+<p>演示视频链接：<a href="https://cloud.tsinghua.edu.cn/f/5caee2b1ed674fa29bb0/" target="_blank"><a href="https://cloud.tsinghua.edu.cn/f/5caee2b1ed674fa29bb0/">https://cloud.tsinghua.edu.cn/f/5caee2b1ed674fa29bb0/</a></a></p>
 </li>
 </ul>
 <p>进入资产管理员账号，点击侧栏的“告警”按钮，再点击分页栏中的“告警策略”按钮，进入告警策略界面。点击右上方的“添加一行数据”按钮，即可对某种资产类型的某个属性设置新增一个告警策略，当该属性大于或小于阈值时，资产管理员将收到告警信息。资产管理员还可以点击“操作”栏中的“编辑”或“删除”按钮，对告警策略进行修改或删除操作。</p>
@@ -1812,12 +2044,14 @@
 <ul>
 <li>需求说明：系统对用户的友好程度强，包括用户操作的简单性、操作的直观性、操作的可预测性、系统的反应速度、系统的可读性等</li>
 </ul>
-<p>本系统的设计利用 antd 等组件库，界面美观，且不同界面的基本风格保持统一。本系统还在易用性上做出了巨大努力，举例如下：
-- 在大多数筛选处均实现了模糊查询功能，用户不需要精确记忆资产各项信息即可完成查询；
-- 在所有展示界面都实现了分页器功能，使用户感受更为直观；
-- 在展示内容较多处增加文档要求之外的筛选功能，帮助用户快速找到目标，提高了系统的可读性和易用性；
-- 完善了各类错误提示，保证用户在错误操作时能够及时发现并纠正错误；
-- 对部分按钮增加防抖功能，在用户完成一次点击且操作还未完成时禁用当前按钮，防止用户重复点击造成的错误操作。</p>
+<p>本系统的设计利用 antd 等组件库，界面美观，且不同界面的基本风格保持统一。本系统还在易用性上做出了巨大努力，举例如下：</p>
+<ul>
+<li>在大多数筛选处均实现了模糊查询功能，用户不需要精确记忆资产各项信息即可完成查询；</li>
+<li>在所有展示界面都实现了分页器功能，使用户感受更为直观；</li>
+<li>在展示内容较多处增加文档要求之外的筛选功能，帮助用户快速找到目标，提高了系统的可读性和易用性；</li>
+<li>完善了各类错误提示，保证用户在错误操作时能够及时发现并纠正错误；</li>
+<li>对部分按钮增加防抖功能，在用户完成一次点击且操作还未完成时禁用当前按钮，防止用户重复点击造成的错误操作。</li>
+</ul>
 <h3 id="37">37. 性能要求<a class="headerlink" href="#37" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>系统反应速度合理，在使用时不会出现明显卡顿现象，至少支持同时承载 100k 条资产与 50k 个用户。</p>
@@ -1826,6 +2060,18 @@
 <li>需求说明：系统反应速度合理，在使用时不会出现明显卡顿现象，支持同时承载 100k 条资产与 50k 个用户</li>
 </ul>
 <p>我们已向本系统预置了 10 万余条资产与 5 万余个用户，使用仍然流畅，各页面加载情况正常。具体数据库信息不在此处展示。</p>
+<h3 id="38">38. 用户信息显示（拓展功能）<a class="headerlink" href="#38" title="Permanent link">&para;</a></h3>
+<ul>
+<li>需求说明：所有用户 在界面右上角查看当前账号的基本信息，包括昵称、角色、组织架构、是否绑定飞书等</li>
+</ul>
+<p><img alt="image-20230520001449684" src="../test.assets/image-20230520001449684.png" /></p>
+<p><center>用户信息显示界面展示</center></p>
+<h3 id="39">39. 用户信息修改（拓展功能）<a class="headerlink" href="#39" title="Permanent link">&para;</a></h3>
+<ul>
+<li>需求说明：所有用户 可以在设置中修改当前账号的昵称和密码</li>
+</ul>
+<p><img alt="image-20230520001503490" src="../test.assets/image-20230520001503490.png" /></p>
+<p><center>用户信息修改界面展示</center></p>
 
 
 

@@ -279,11 +279,15 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../model/" class="md-tabs__link">
-      模型文档
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../model/" class="md-tabs__link">
+        模型文档
+      </a>
+    </li>
+  
 
       
         
@@ -420,34 +424,27 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     需求清单
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     开发甘特图
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     角色权限
   </a>
   
@@ -616,10 +613,92 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../model/">模型文档</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          模型文档
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../model/" class="md-nav__link">
-        模型文档
+      <a href="../model/sys_model/" class="md-nav__link">
+        系统架构模型
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/asset_model/" class="md-nav__link">
+        资产架构模型
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/sys_man_model/" class="md-nav__link">
+        系统管理模型
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -722,34 +801,27 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     需求清单
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     开发甘特图
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     角色权限
   </a>
   
@@ -781,26 +853,67 @@
 <!-- #### 超级管理员 -->
 <div class="admonition note">
 <p class="admonition-title">系统超级管理员</p>
-<p>配置初始数据和参数，增加业务实体，为不同业务实体委派系统管理员。</p>
+<p>整个企业资产管理系统有一个超级管理员，负责管理系统中的业务实体，并为业务实体委派系统管理员。</p>
 </div>
+<p>作为超级管理员，我希望系统提供以下功能和特性，以便全面管理和监控整个系统：</p>
+<ol>
+<li>业务实体管理：我需要能够创建和管理系统中的所有业务实体，并为它们分别委派系统管理员。我无需查看和修改业务实体内部的信息。</li>
+<li>用户管理：我需要能够查看系统中所有未分配的用户，以便将他们委派为系统管理员。如果用户已经成为业务实体内部的员工，我将无法将他们设为系统管理员。</li>
+</ol>
 <!-- #### 系统管理员 -->
 <div class="admonition note">
 <p class="admonition-title">企业系统管理员</p>
-<p>管理每个业务实体中的用户、角色、日志、部门树结构。</p>
+<p>每个业务实体有一个系统管理员，负责管理实体中的用户、角色、日志、部门树结构。</p>
 </div>
+<p>作为系统管理员，我希望系统提供以下功能和特性，以便更好地管理和维护系统：</p>
+<ol>
+<li>用户管理：我需要能够管理系统中的用户账号，拥有编辑和删除用户账号的权限。我还希望能够重置用户密码、启用或禁用用户账号，并能够为不同的用户分配不同的角色和权限。</li>
+<li>组织管理：我希望能够在实体内创建多级部门树，并为部门分别指派资产管理员。通过这种方式，我将资产管理的责任和权限下放给资产管理员。</li>
+<li>异步任务管理：我需要监控和管理系统正在执行的任务。例如，当实体中有资产管理员一次性导入了大量资产，我能够查看该任务的执行进度，下载相关记录，并重试失败任务等。</li>
+<li>操作日志：我希望能够查看实体内所有用户的操作日志，包括登录登出、权限修改、资产录入、资产编辑等各类操作。通过日志表，我能够详细地监控业务实体内的最新动态。</li>
+<li>角色权限：我需要查看系统中所有角色的对应权限。了解不同用户的权限和职责有助于我更好地管理业务实体和使用系统。</li>
+</ol>
 <!-- #### 资产管理员 -->
 <div class="admonition note">
 <p class="admonition-title">企业资产管理员</p>
-<p>每个业务实体的下属部门有自己的资产管理员，负责管理仓库内的资产，并为员工提供资产相关服务。</p>
+<p>每个部门有一个资产管理员，负责管理仓库内的资产，并为员工提供资产相关服务。</p>
 </div>
+<p>作为资产管理员，我需要系统提供以下功能和特性，以便更好地管理和跟踪企业的资产：</p>
+<ol>
+<li>资产类型和录入：我希望能够方便地录入和标识企业的资产信息。我能够定义多级资产树，定义资产类型之间的从属关系。系统应该支持批量导入资产数据，并能够自动生成唯一的资产标识码。我可以为资产实例设置挂靠关系。我还希望能够记录资产的基本信息，如名称、类型、位置、图片、富文本格式的描述等。</li>
+<li>资产查询和历史：我需要能够快速查询特定资产的信息。系统应该提供灵活的搜索和筛选功能，以便我可以根据各种条件找到所需的资产。我还希望能够查看资产的历史记录，例如录入、编辑、借出、退库、调拨、维保、清退等。</li>
+<li>资产属性和标签：我希望能够为资产定义不同的属性。我希望预置一批标签模板，能够结合资产信息打印出来，贴在资产上作为标记。任何人只需扫描资产标签上的二维码，即可查看资产的基本信息。</li>
+<li>资产折旧和告警：我希望系统能够自动计算资产的折旧情况，并在异常时向我发出告警。系统应该允许我设置资产的折旧规则和告警规则，并在合适的时候提醒我。</li>
+<li>资产调拨和清退：我需要系统能够支持资产的调拨和清退。我希望能够将资产批量地调拨给其他部门，资产的部门、挂账人应该随之改变；我希望能够批量地清退废弃的资产，但是仍然能够在系统中查看其历史记录。</li>
+<li>资产统计：我需要系统能够自动生成资产的统计数据，以便我能够了解资产的使用情况。我希望能够查看资产的数量、价值、净值曲线等信息，以便我快速了解管辖范围内的资产。</li>
+<li>资产审批：我希望可以在系统中查看并处理员工发来的审批单。如果我绑定了飞书，我希望能够在手机上进行操作。</li>
+</ol>
 <!-- #### 员工 -->
 <div class="admonition note">
 <p class="admonition-title">企业员工</p>
-<p>企业内的每一个员工。</p>
+<p>每个业务实体有若干员工，员工可以归属于某个部门，进而申请领用部门内的资产。</p>
 </div>
+<p>作为员工，我希望系统能够提供以下功能和特性，以便更好地使用和管理我所负责的资产：</p>
+<ol>
+<li>资产领用和归还：我需要能够方便地领用和归还资产。系统应该提供简单的流程和界面，让我能够快速选择需要领用的资产，并记录领用和归还的日期和状态。我希望能够方便地查看我所领用的资产列表。</li>
+<li>资产转移：我希望可以将资产批量地转移给相同业务实体内的其他员工。转移申请将由本部门的资产管理员进行审批。</li>
+<li>资产维保：如果某个资产需要维修，我希望能够通过系统提交资产维保申请。系统应该将申请发给相关的负责人。</li>
+<li>资产查看：我需要在系统中查看我所负责的资产的基本信息和，例如当前位置、折旧年限、净值。</li>
+</ol>
+<!-- #### 所有用户 -->
+<div class="admonition note">
+<p class="admonition-title">所有用户</p>
+</div>
+<p>作为系统的使用者，无论我是什么角色，我希望系统提供以下功能和特性：</p>
+<ol>
+<li>注册一个新用户，等待被分配角色和权限。</li>
+<li>在界面中显示、且只显示我有权限使用的功能。</li>
+<li>查看我的个人信息，包括昵称、密码、当前角色、当前部门等。</li>
+<li>修改我的昵称和密码。</li>
+<li>绑定飞书账号，并使用飞书授权直接登录。</li>
+</ol>
 <h3 id="_4">用户用例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<h3 id="_5"><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<h2 id="_6">需求清单<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="_5">需求清单<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -948,7 +1061,7 @@
 <tr>
 <td>28</td>
 <td>资产退库</td>
-<td>员工 向资产管理员领用资产。一次可以领用多个资产</td>
+<td>员工 向资产管理员领用资产；一次可以领用多个资产</td>
 </tr>
 <tr>
 <td>29</td>
@@ -1007,307 +1120,308 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_7">开发甘特图<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<h2 id="_8">角色权限<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h2 id="_6">开发甘特图<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><img alt="1684517839178" src="../eam.assets/1684517839178.png" /></p>
+<h2 id="_7">角色权限<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>功能</th>
-<th>超级管理员</th>
-<th>系统管理员</th>
-<th>资产管理员</th>
-<th>员工</th>
-<th>未分配</th>
+<th>需求名称</th>
+<th align="center">超级管理员</th>
+<th align="center">系统管理员</th>
+<th align="center">资产管理员</th>
+<th align="center">员工</th>
+<th align="center">未分配</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>注册</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
 </tr>
 <tr>
 <td>登录登出</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
 </tr>
 <tr>
 <td>设置个人信息</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
 </tr>
 <tr>
 <td>飞书账号绑定</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
 </tr>
 <tr>
 <td>应用门户</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
 </tr>
 <tr>
 <td>业务实体定义</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>用户管理</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>角色权限</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>组织数据管理</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>员工数据管理</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>应用管理</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>操作日志</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>导入导出管理</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>飞书人事管理</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>待办任务</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>飞书消息推送</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>飞书审批管理</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产分类定义</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产属性定义</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产标签定义</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产录入</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产信息变更</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产查询</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产批量导入</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产清退</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产调拨</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产历史</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产查看</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产扫描</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
 </tr>
 <tr>
 <td>资产统计</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产折旧</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产告警</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产领用</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产退库</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产维保</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
 </tr>
 <tr>
 <td>资产转移</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="center">×</td>
 </tr>
 </tbody>
 </table>
