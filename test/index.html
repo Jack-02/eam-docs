@@ -408,6 +408,8 @@
       
         
           
+            
+          
         
           
         
@@ -421,10 +423,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-          API 文档
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../api/">API 文档</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
@@ -433,18 +441,6 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api/" class="md-nav__link">
-        格式示例
-      </a>
-    </li>
-  
-
             
           
             
@@ -1616,7 +1612,7 @@
 <p>演示视频链接：<a href="https://cloud.tsinghua.edu.cn/f/586f1e1d66454c9ab461/" target="_blank"><a href="https://cloud.tsinghua.edu.cn/f/586f1e1d66454c9ab461/">https://cloud.tsinghua.edu.cn/f/586f1e1d66454c9ab461/</a></a></p>
 </li>
 </ul>
-<p>首先登录两个资产管理员账号，分别批量录入一批数量较大的资产。然后进入系统管理员账号，点击侧栏的“任务”按钮，进入导入导出管理界面。可以看到异步任务信息，包括编号、名称、状态、提交时间、处理时间、提交人、结果、进度等。</p>
+<p>进入系统管理员账号，点击侧栏的“任务”按钮，进入导入导出管理界面。可以看到异步任务信息，包括编号、名称、状态、提交时间、处理时间、提交人、结果、进度等。</p>
 <p><img alt="image-20230519120254512" src="../test.assets/image-20230519120254512.png" /></p>
 <p><center>导入导出管理界面展示</center></p>
 <p>点击“操作”栏中的“重试”按钮，可以重新执行失败的异步任务。点击“操作”栏中的“信息下载”按钮，可以下载任务结果文件。</p>
@@ -1644,7 +1640,11 @@
 </blockquote>
 <ul>
 <li>
-<p>需求说明：资产管理员 可以在飞书端收到待办任务的消息提醒</p>
+<p>需求说明：</p>
+<ul>
+<li>资产管理员 可以在飞书端收到待办任务的消息提醒</li>
+<li>员工 可以在飞书端收到申请办理进度的消息提醒</li>
+</ul>
 </li>
 <li>
 <p>演示视频链接：</p>
@@ -1716,7 +1716,7 @@
 <p>进入资产管理员账号，点击侧栏的“定义”按钮，再点击分页栏中的“资产类型”按钮，进入资产分类定义界面。</p>
 <p><img alt="image-20230519121400852" src="../test.assets/image-20230519121400852.png" /></p>
 <p><center>资产分类定义界面展示</center></p>
-<p>界面以树状结构展示了资产类型变编号、资产类型名、资产类别（条目型资产/数目型资产）及所属资产类别。点击上方的“添加一行数据”按钮，即可新增一个资产分类，并指定资产类型名、资产类别及所属资产类别等信息。资产管理员还可以点击“操作”栏中的“编辑”或“删除”按钮，对资产分类进行修改或删除操作。</p>
+<p>界面以树状结构展示了资产类型编号、资产类型名、资产类别（条目型资产/数目型资产）及所属资产类别。点击上方的“添加一行数据”按钮，即可新增一个资产分类，并指定资产类型名、资产类别及所属资产类别等信息。资产管理员还可以点击“操作”栏中的“编辑”或“删除”按钮，对资产分类进行修改或删除操作。</p>
 <h3 id="17">17. 资产属性定义<a class="headerlink" href="#17" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>资产管理员定义某业务实体下资产的自定义属性，用于业务定制场景。例如某制造公司的资产需要指定用于哪个生产线。</p>

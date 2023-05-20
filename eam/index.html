@@ -491,6 +491,8 @@
       
         
           
+            
+          
         
           
         
@@ -504,10 +506,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-          API 文档
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../api/">API 文档</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
@@ -516,18 +524,6 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api/" class="md-nav__link">
-        格式示例
-      </a>
-    </li>
-  
-
             
           
             
@@ -850,6 +846,19 @@
 资产领用、资产借用、资产转移、资产清退、资产维修、资产卡片查看和资产标签打印等。支持基本的审批流程。<br/></p>
 <h2 id="_2">需求分析<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="_3">用户故事<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<!-- #### 所有用户 -->
+<div class="admonition note">
+<p class="admonition-title">所有用户</p>
+<p>作为系统的使用者，我希望系统具有基本的易用性。</p>
+</div>
+<p>作为使用者，我希望系统提供以下功能和特性：</p>
+<ol>
+<li>注册一个新用户，等待被分配角色和权限。</li>
+<li>在界面中显示、且只显示我有权限使用的功能。</li>
+<li>查看我的个人信息，包括昵称、密码、当前角色、当前部门等。</li>
+<li>修改我的昵称和密码。</li>
+<li>绑定飞书账号，并使用飞书授权直接登录。</li>
+</ol>
 <!-- #### 超级管理员 -->
 <div class="admonition note">
 <p class="admonition-title">系统超级管理员</p>
@@ -895,24 +904,13 @@
 </div>
 <p>作为员工，我希望系统能够提供以下功能和特性，以便更好地使用和管理我所负责的资产：</p>
 <ol>
-<li>资产领用和归还：我需要能够方便地领用和归还资产。系统应该提供简单的流程和界面，让我能够快速选择需要领用的资产，并记录领用和归还的日期和状态。我希望能够方便地查看我所领用的资产列表。</li>
+<li>资产领用和退库：我需要能够方便地领用和归还资产。我希望方便地查看我所领用的资产列表。</li>
 <li>资产转移：我希望可以将资产批量地转移给相同业务实体内的其他员工。转移申请将由本部门的资产管理员进行审批。</li>
 <li>资产维保：如果某个资产需要维修，我希望能够通过系统提交资产维保申请。系统应该将申请发给相关的负责人。</li>
-<li>资产查看：我需要在系统中查看我所负责的资产的基本信息和，例如当前位置、折旧年限、净值。</li>
-</ol>
-<!-- #### 所有用户 -->
-<div class="admonition note">
-<p class="admonition-title">所有用户</p>
-</div>
-<p>作为系统的使用者，无论我是什么角色，我希望系统提供以下功能和特性：</p>
-<ol>
-<li>注册一个新用户，等待被分配角色和权限。</li>
-<li>在界面中显示、且只显示我有权限使用的功能。</li>
-<li>查看我的个人信息，包括昵称、密码、当前角色、当前部门等。</li>
-<li>修改我的昵称和密码。</li>
-<li>绑定飞书账号，并使用飞书授权直接登录。</li>
+<li>资产查看：我需要查看我所负责的资产的基本信息，例如当前位置、折旧年限、净值。</li>
 </ol>
 <h3 id="_4">用户用例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><img alt="1684580739334" src="../eam.assets/1684580739334.png" /></p>
 <h2 id="_5">需求清单<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -981,7 +979,7 @@
 <tr>
 <td>12</td>
 <td>飞书消息推送</td>
-<td>资产管理员 可以在飞书端收到待办任务的消息提醒</td>
+<td>资产管理员 可以在飞书端收到待办任务的消息提醒<br/>员工 可以在飞书端收到申请办理进度的消息提醒</td>
 </tr>
 <tr>
 <td>13</td>
@@ -1260,7 +1258,7 @@
 <td align="center">×</td>
 <td align="center">×</td>
 <td align="center">√</td>
-<td align="center">×</td>
+<td align="center">√</td>
 <td align="center">×</td>
 </tr>
 <tr>
