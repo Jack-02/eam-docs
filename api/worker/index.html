@@ -1109,11 +1109,11 @@
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Succeed searching the asset&quot;</span><span class="p">,</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="p">{</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">            </span><span class="err">id</span><span class="p">:</span><span class="w"> </span><span class="kc">nu</span><span class="err">mber;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">            </span><span class="err">id</span><span class="p">:</span><span class="w"> </span><span class="err">i</span><span class="kc">nt</span><span class="err">;</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">            </span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g;</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">            </span><span class="err">price</span><span class="p">:</span><span class="w"> </span><span class="kc">nu</span><span class="err">mber;</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">            </span><span class="kc">nu</span><span class="err">mber</span><span class="p">:</span><span class="w"> </span><span class="kc">nu</span><span class="err">mber;</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">            </span><span class="err">li</span><span class="kc">fe</span><span class="p">:</span><span class="w"> </span><span class="kc">nu</span><span class="err">mber;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">            </span><span class="err">price</span><span class="p">:</span><span class="w"> </span><span class="err">i</span><span class="kc">nt</span><span class="err">;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">            </span><span class="kc">nu</span><span class="err">mber</span><span class="p">:</span><span class="w"> </span><span class="err">i</span><span class="kc">nt</span><span class="err">;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">            </span><span class="err">li</span><span class="kc">fe</span><span class="p">:</span><span class="w"> </span><span class="err">i</span><span class="kc">nt</span><span class="err">;</span>
 <a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="p">}</span>
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">]</span>
 <a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">}</span>
@@ -1134,7 +1134,7 @@
 <tbody>
 <tr>
 <td>method</td>
-<td>const number = &frac12;</td>
+<td>int</td>
 <td>分类参数，区别查询的资产，1为员工治下资产，2为部门内未领用资产</td>
 </tr>
 <tr>
@@ -1216,17 +1216,17 @@
 </tr>
 <tr>
 <td>price</td>
-<td>number</td>
+<td>int</td>
 <td>资产价格</td>
 </tr>
 <tr>
 <td>life</td>
-<td>number</td>
+<td>int</td>
 <td>折旧年限</td>
 </tr>
 <tr>
 <td>number</td>
-<td>number</td>
+<td>int</td>
 <td>资产数目</td>
 </tr>
 </tbody>
@@ -1274,12 +1274,12 @@
 <tbody>
 <tr>
 <td>method</td>
-<td>const number = 3</td>
+<td>int</td>
 <td>分类参数，区别查询的资产，3为单个资产查询</td>
 </tr>
 <tr>
 <td>asset_id</td>
-<td>number</td>
+<td>int</td>
 <td>查询的资产id</td>
 </tr>
 </tbody>
@@ -1325,22 +1325,22 @@
 </tr>
 <tr>
 <td>price</td>
-<td>number</td>
+<td>int</td>
 <td>资产价格</td>
 </tr>
 <tr>
 <td>life</td>
-<td>number</td>
+<td>int</td>
 <td>折旧年限</td>
 </tr>
 <tr>
 <td>number</td>
-<td>number</td>
+<td>int</td>
 <td>资产数目</td>
 </tr>
 <tr>
 <td>alarm_time</td>
-<td>number</td>
+<td>int</td>
 <td>告警时间</td>
 </tr>
 <tr>
@@ -1350,7 +1350,7 @@
 </tr>
 <tr>
 <td>classcategory</td>
-<td>number=&frac12;</td>
+<td>int</td>
 <td>资产类别，1为数量型2为条目型</td>
 </tr>
 <tr>
@@ -1360,7 +1360,7 @@
 </tr>
 <tr>
 <td>condition</td>
-<td>number</td>
+<td>int</td>
 <td>该资产为借出借入维保退库等状态参数</td>
 </tr>
 <tr>
@@ -1370,12 +1370,12 @@
 </tr>
 <tr>
 <td>department_id</td>
-<td>number</td>
+<td>int</td>
 <td>资产所属部门id</td>
 </tr>
 <tr>
 <td>endvalue</td>
-<td>number</td>
+<td>int</td>
 <td>折旧后终值</td>
 </tr>
 <tr>
@@ -1385,12 +1385,12 @@
 </tr>
 <tr>
 <td>life</td>
-<td>number</td>
+<td>int</td>
 <td>资产寿命</td>
 </tr>
 <tr>
 <td>value</td>
-<td>number</td>
+<td>int</td>
 <td>当前净值</td>
 </tr>
 <tr>
@@ -1400,7 +1400,7 @@
 </tr>
 <tr>
 <td>purchase_time</td>
-<td>number</td>
+<td>int</td>
 <td>购买时间</td>
 </tr>
 <tr>
@@ -1450,12 +1450,12 @@
 <tbody>
 <tr>
 <td>method</td>
-<td>const number = &frac12;/3</td>
+<td>int</td>
 <td>//&frac12;/3分别代表领用、退库、维保</td>
 </tr>
 <tr>
 <td>asset_ids</td>
-<td>array of number</td>
+<td>array of int</td>
 <td>[1,2,3,...]操作资产的id</td>
 </tr>
 </tbody>
@@ -1559,7 +1559,7 @@
 <tbody>
 <tr>
 <td>id</td>
-<td>number</td>
+<td>int</td>
 <td>查询用户id</td>
 </tr>
 <tr>
@@ -1686,12 +1686,12 @@
 <tbody>
 <tr>
 <td>target_worker_id</td>
-<td>number</td>
+<td>int</td>
 <td>转至员工的id</td>
 </tr>
 <tr>
 <td>asset_ids</td>
-<td>array of number</td>
+<td>array of int</td>
 <td>[1,2,3,...]转移资产的id</td>
 </tr>
 </tbody>
@@ -1758,7 +1758,7 @@
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年5月25日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年5月27日</span>
       
     
   </small>
